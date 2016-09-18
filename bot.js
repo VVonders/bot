@@ -13,6 +13,9 @@ client.on('message', message => {
   else if (message.content === 'meh') {
     message.reply('meh');
   }
+  else if (message.content === 'something') {
+    message.channel.sendMessage('Hi there');
+  }
 });
 
 client.login(token);
