@@ -7,14 +7,17 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-  if (message.content === 'ping') {
+  if (message.content == 'ping') {
     message.reply('pong');
   }
-  else if (message.content === 'meh') {
+  else if (message.content == 'meh') {
     message.reply('meh');
   }
-  else if (message.content === 'something') {
+  else if (message.content == 'something') {
     message.channel.sendMessage('Hi there');
+  }
+  else {
+    console.log(message.content);
   }
 });
 
