@@ -13,8 +13,11 @@ client.on('message', message => {
   else if (message.content == 'meh') {
     message.reply('meh');
   }
-  else if (message.content == 'something') {
+  else if (message.content == 'hello') {
     message.channel.sendMessage('Hi there');
+  }
+  else if (message.content == 'does this work') {
+    message.channel.sendMessage('this works')
   }
   else {
     console.log(message.content);
