@@ -17,7 +17,7 @@ client.on('message', message => {
     message.channel.sendMessage('Hi there');
   }
   else if (message.content == 'does this work') {
-    message.channel.sendMessage('this works')
+    message.channel.sendMessage('this works');
   }
   else {
     console.log(message.content);
